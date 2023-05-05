@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url(../fonts/JF-Flat-regular.eot);
+  src: url(../fonts/JF-Flat-regular.eot?iefix#) format("embedded-opentype"),
+    url("../fonts/JF-Flat-regular.svg?#JF Flat Regular") format("svg"),
+    url(../fonts/JF-Flat-regular.woff) format(woff),
+    url(../fonts/JF-Flat-regular.ttf) format(truetype);
+  font-weight: bolder;
+  font-style: normal;
+}
+
+:root {
+  --white-col: #fff;
+  --black-col: #000;
+  --gray-col: #868686;
+  --first-col: #37306b;
+  --second-col: #66347f;
+  --third-col: #9e4784;
+  --fouth-col: #d27685;
+  /*! Light Colors */
+  --light-fs: #7e74c5;
+  --light-g: #d4d4d4;
+  --light-sec: #c3a1d4;
+  --light-fth: #e2b9c0;
+}
+
+body {
+  font-family: "JF Flat Regular", "Segoe UI", Tahoma, Geneva, verdana,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--black-col);
+}
+
+.custom-navbar {
+  border-bottom: 2px solid var(--light-g);
+  width: 100%;
+  background-color: var(--white-col);
+}
+
+.custom-form-control,
+.custom-btn {
+  border: 2px solid var(--light-sec);
+  box-shadow: none;
+  border-radius: 2px;
+  color: #868686;
+  height: 38px;
+  padding: 6px 16px 7px;
+  transition: 0.3s;
+}
+
+.custom-btn {
+  border-right: 0;
+}
+
+.custom-form-control:focus,
+.custom-btn:focus {
+  box-shadow: none;
+  border: 2px solid var(--light-fs);
+}
+
+.custom-btn:hover {
+  background-color: var(--light-g);
+  border-color: var(--light-fs);
+  color: var(--first-col);
+}
+
+.custom-btn:focus {
+  color: var(--first-col);
+  border-color: var(--gray-col);
+}
+
+.categories {
+  border-right: 0 !important;
+  border-radius: 0;
+}
+
+.custom-dropdown-menu {
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px 0px var(--gray-col);
+  color: #777;
+}
+
+.search-btn {
+  background-color: var(--first-col);
+  border-color: var(--first-col);
+  color: var(--white-col);
+  padding: 5px 15px 7px;
+  height: 38px;
+  width: 65px;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.search-btn:hover,
+.search-btn:active,
+.search-btn:focus,
+.search-btn:active:focus,
+.search-btn:active:hover {
+  background-color: var(--light-fs);
+  color: var(--white-col);
+  border-color: var(--light-fs);
+}
+
+ul.nav-item .nav-link {
+  color: var(--gray-col);
+  padding: 15px;
+}
+
+.custom-navbar .navbar-nav li.active a.nav-link {
+  color: var(--first-col);
+  font-weight: 700;
+  border-bottom: 1px solid var(--first-col);
+}
+
+/*!Here is a problem */
+/*!Here is a problem */
+/*!Here is a problem */
+
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
+  background-color: var(--light-g);
+}
+
+/*!Here is a problem */
+/*!Here is a problem */
+/*!Here is a problem */
+
+.custom-dropdown-menu li a:hover {
+  background-color: var(--light-g);
+  background-color: var(--light-sec);
+}
+
+.custom-navbar .btn-icon {
+  padding: 5px 10px;
+  color: var(--gray-col);
+  border: 1px solid var(--light-g);
+  background-color: transparent;
+  border-radius: 2px;
+}
