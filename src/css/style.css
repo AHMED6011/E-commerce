@@ -18,9 +18,11 @@
   --third-col: #9e4784;
   --fouth-col: #d27685;
   /*! Light Colors */
-  --light-fs: #7e74c5;
+  --light-w: #e7e6e6;
   --light-g: #d4d4d4;
+  --light-fs: #7e74c5;
   --light-sec: #c3a1d4;
+  --light-th: #c28cb2;
   --light-fth: #e2b9c0;
 }
 
@@ -33,7 +35,7 @@ body {
 }
 
 .custom-navbar {
-  border-bottom: 2px solid var(--light-g);
+  border-bottom: 2px solid var(--light-fs);
   width: 100%;
   background-color: var(--white-col);
 }
@@ -115,17 +117,9 @@ ul.nav-item .nav-link {
   border-bottom: 1px solid var(--first-col);
 }
 
-/*!Here is a problem */
-/*!Here is a problem */
-/*!Here is a problem */
-
 .custom-navbar .navbar-nav li.active:hover a.nav-link {
   background-color: var(--light-g);
 }
-
-/*!Here is a problem */
-/*!Here is a problem */
-/*!Here is a problem */
 
 .custom-dropdown-menu li a:hover {
   background-color: var(--light-g);
@@ -138,4 +132,86 @@ ul.nav-item .nav-link {
   border: 1px solid var(--light-g);
   background-color: transparent;
   border-radius: 2px;
+}
+
+#carousel-featured {
+  background-color: var(--light-w);
+  height: 400px;
+  padding-top: 25px;
+}
+
+#carousel-featured .product-details {
+  border: 1px solid var(--light-sec);
+  padding: 15px;
+  position: relative;
+  top: 50px;
+  height: 200px;
+  background-color: var(--light-g);
+}
+
+#carousel-featured .product-details h1 {
+  font-weight: 700;
+  font-size: 175%;
+  margin-top: 18px;
+}
+
+#carousel-featured .product-details .product-category {
+  border: 1px solid var(--light-sec);
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  background-color: var(--light-g);
+}
+
+.custom-btn-warning {
+  color: var(--gray-col);
+}
+
+.custom-btn-warning:hover {
+  color: var(--black-col);
+}
+
+.custom-btn-warning:hover,
+.custom-btn-warning:active,
+.custom-btn-warning:focus,
+.custom-btn-warning:active:focus,
+.custom-btn-warning:active:hover {
+  color: var(--black-col);
+  box-shadow: none;
+}
+
+.sale.large {
+  height: 60px;
+  width: 60px;
+  left: -20px;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 130%;
+  padding: 35px;
+  line-height: 95%;
+  transform: rotate(-25deg);
+}
+
+.custom-carousel-indicators {
+  top: 235px;
+  right: 42%;
+}
+
+.custom-carousel-indicators-primary {
+  background-color: #ffffff8a !important;
+  height: 65px !important;
+  width: 65px !important;
+  opacity: 1 !important;
+  border: 2px solid var(--light-th) !important;
+  margin: 0 !important;
+  border-radius: 6px;
+  margin-right: 10px !important;
+}
+
+.custom-carousel-indicators-primary.active {
+  border-color: var(--first-col) !important;
 }

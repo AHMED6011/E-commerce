@@ -13,7 +13,3 @@ import "@fortawesome/fontawesome-free/js/all.min";
 document
   .querySelectorAll("[data-bs-toggle='tooltip']")
   .forEach((item) => new bootstrap.Tooltip(item));
-
-console.log("Hello World");
-
-console.log("مرحبا بك");
