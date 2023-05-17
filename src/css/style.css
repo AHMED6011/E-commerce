@@ -247,7 +247,6 @@ ul.nav-item .nav-link {
 }
 
 .heading {
-  /* font-size: 24px; */
   margin-bottom: 25px;
 }
 
@@ -256,6 +255,7 @@ ul.nav-item .nav-link {
   padding: 8px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 50px;
 }
 
 .custom-thumbnail:hover {
@@ -307,7 +307,7 @@ ul.nav-item .nav-link {
 }
 
 .custon-carousel-indicators2 {
-  bottom: -70px !important;
+  bottom: -15px !important;
 }
 
 .custon-carousel-indicators2 li {
@@ -319,4 +319,35 @@ ul.nav-item .nav-link {
 
 .custon-carousel-indicators2 li.active {
   background-color: var(--gray-col) !important;
+}
+
+.panel {
+  border: 3px solid var(--light-g);
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.panel h4,
+.panel .price {
+  font-size: 130%;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.custom-text-muted {
+  color: var(--gray-col);
+}
+
+.arrow-btn {
+  background-color: var(--white-col);
+  color: var(--gray-col);
+  border: 1px solid var(--light-g);
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.row-brands h3 {
+  border-top: 1px solid var(--light-g);
+  padding-top: 25px;
 }
