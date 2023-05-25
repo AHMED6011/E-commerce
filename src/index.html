@@ -15,7 +15,7 @@
           <div class="container">
             <div class="navbar-header">
               <button
-                class="navbar-toggler"
+                class="navbar-toggler btn btn-icon"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
@@ -23,21 +23,22 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars fa-xl"></i>
               </button>
+              <a
+                class="btn-icon btn me-3 d-lg-none d-block"
+                href="./checkout.html"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
               <a href="#">
-                <img
-                  class="me-5"
-                  src="images/logo_nav2.png"
-                  alt="متجر أنفنيتي"
-                  style="height: 80px; border-radius: 50%"
-                />
+                <img class="me-5" src="images/logo.png" alt="متجر أنفنيتي" />
               </a>
             </div>
-            <form class="d-flex">
+            <form class="d-flex inline-form">
               <input
                 type="search"
-                class="form-control custom-form-control"
+                class="form-control custom-form-control rounded-0"
                 placeholder="كلمة البحث...."
               />
               <div class="dropdown">
@@ -127,7 +128,7 @@
                 <li class="nav-item">
                   <a href="./contact.html" class="nav-link"> تواصل معنا </a>
                 </li>
-                <li>
+                <li class="d-lg-block d-none">
                   <a
                     class="btn-icon btn"
                     id="btn-shopping-cart"
@@ -150,10 +151,12 @@
       <div class="row">
         <div
           id="carousel-featured"
-          class="carousel slide"
+          class="carousel slide overflow-hidden"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators custom-carousel-indicators">
+          <div
+            class="carousel-indicators custom-carousel-indicators d-none d-md-block"
+          >
             <img
               src="images/lacoste_1.png"
               class="active custom-carousel-indicators-primary"
@@ -191,14 +194,10 @@
             <div class="carousel-item active">
               <div class="container">
                 <div class="row">
-                  <div class="col-4 offset-2">
-                    <img
-                      src="images/lacoste_1.png"
-                      class="d-block w-100"
-                      alt="lacoste"
-                    />
+                  <div class="col-md-5 offset-lg-1 text-center">
+                    <img src="images/lacoste_1.png" class="" alt="lacoste" />
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-7 col-lg-6">
                     <div class="product-details rounded">
                       <div class="product-category fw-bold rounded">
                         تخفيضات
@@ -222,14 +221,10 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="row">
-                  <div class="col-4 offset-2">
-                    <img
-                      src="images/lacoste_2.png"
-                      class="d-block w-100"
-                      alt="lacoste"
-                    />
+                  <div class="col-md-5 offset-lg-1 text-center">
+                    <img src="images/lacoste_2.png" class="" alt="lacoste" />
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-7 col-lg-6">
                     <div class="product-details rounded">
                       <div class="product-category fw-bold rounded">نسائي</div>
                       <h1>حقيبة شانتاكو نسائية</h1>
@@ -246,14 +241,10 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="row">
-                  <div class="col-4 offset-2">
-                    <img
-                      src="images/lacoste_3.png"
-                      class="d-block w-100"
-                      alt="lacoste"
-                    />
+                  <div class="col-md-5 offset-lg-1 text-center">
+                    <img src="images/lacoste_3.png" class="" alt="lacoste" />
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-7 col-lg-6">
                     <div class="product-details rounded">
                       <div class="product-category fw-bold rounded">
                         الأكثر مبيعاً
@@ -272,14 +263,10 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="row">
-                  <div class="col-4 offset-2">
-                    <img
-                      src="images/adidas_3.png"
-                      class="d-block w-100"
-                      alt="adidas"
-                    />
+                  <div class="col-md-5 offset-lg-1 text-center">
+                    <img src="images/adidas_3.png" class="" alt="adidas" />
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-7 col-lg-6">
                     <div class="product-details rounded">
                       <div class="product-category fw-bold rounded">أطفال</div>
                       <h1>بجامة فايربرد الراضية</h1>
@@ -314,8 +301,8 @@
 
       <!-- Start Featured Products -->
       <div class="container">
-        <div class="row">
-          <div id="stor-features" class="col-8 offset-2">
+        <div class="row justify-content-center justify-content-lg-start">
+          <div id="stor-features" class="col-lg-8 offset-lg-2">
             <h3 class="heading text-center">مميزات المتجر</h3>
             <div class="row">
               <div class="col-4 text-center feature">
@@ -342,7 +329,7 @@
           <h3 class="heading text-center">الأكثر مبيعًا</h3>
           <div
             id="carousel-most-sold"
-            class="carousel slide"
+            class="carousel slide d-none d-md-block"
             data-bs-ride="carousel"
           >
             <ol class="carousel-indicators custon-carousel-indicators2">
@@ -363,7 +350,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -384,10 +371,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -408,10 +401,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="sale">50%</div>
                       <div class="overlay position-absolute">
@@ -433,10 +432,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4 d-none d-lg-block">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -464,7 +469,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -485,10 +490,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -509,10 +520,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -533,10 +550,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4 d-none d-lg-block">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -564,7 +587,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -585,10 +608,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -609,10 +638,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -633,10 +668,16 @@
                           <i class="fa-solid fa-star text-warning"></i>
                           <i class="fa-regular fa-star"></i>
                         </div>
+                        <button
+                          class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                        >
+                          إضافة إالى العربة
+                          <i class="fas fa-cart-plus"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-lg-3 col-md-4 d-none d-lg-block">
                     <div class="card custom-thumbnail">
                       <div class="overlay position-absolute">
                         <button class="btn add-to-card-btn">
@@ -664,6 +705,120 @@
               </div>
             </div>
           </div>
+          <div
+            id="carousel-most-sold-altrenative"
+            class="carousel slide d-md-none d-block"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card custom-thumbnail">
+                  <div class="overlay position-absolute">
+                    <button class="btn add-to-card-btn">
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                  <img src="images/most_sold_1.jpg" alt="فلورا تي شيرت" />
+                  <div class="card-body p-2">
+                    <div class="clearfix">
+                      <h4 class="float-start">فلورا تي شيرت</h4>
+                      <div class="price text-info float-end">200$</div>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <button
+                      class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                    >
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card custom-thumbnail">
+                  <div class="overlay position-absolute">
+                    <button class="btn add-to-card-btn">
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                  <img src="images/most_sold_2.jpg" alt="فلورا تي شيرت" />
+                  <div class="card-body p-2">
+                    <div class="clearfix">
+                      <h4 class="float-start">فلورا تي شيرت</h4>
+                      <div class="price text-info float-end">200$</div>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <button
+                      class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                    >
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card custom-thumbnail">
+                  <div class="overlay position-absolute">
+                    <button class="btn add-to-card-btn">
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                  <img src="images/most_sold_3.jpg" alt="فلورا تي شيرت" />
+                  <div class="card-body p-2">
+                    <div class="clearfix">
+                      <h4 class="float-start">فلورا تي شيرت</h4>
+                      <div class="price text-info float-end">200$</div>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <button
+                      class="btn add-to-card-btn d-block d-lg-none mx-auto"
+                    >
+                      إضافة إالى العربة
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                class="btn arrow-btn"
+                data-bs-target="#carousel-most-sold-altrenative"
+                data-bs-slide="prev"
+              >
+                <div class="fas fa-chevron-right"></div>
+              </button>
+              <button
+                class="btn arrow-btn"
+                data-bs-target="#carousel-most-sold-altrenative"
+                data-bs-slide="next"
+              >
+                <div class="fas fa-chevron-left"></div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End Most Sold -->
@@ -673,7 +828,7 @@
         <div class="container">
           <h3 class="heading">الماركات العالمية</h3>
           <div class="row">
-            <div class="col-6 mt-4">
+            <div class="col-md-6 mt-4">
               <div class="panel">
                 <div
                   id="carousel-brand-addidas1"
@@ -683,7 +838,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/lacoste_1.jpg"
                             alt="lacoste"
@@ -692,12 +847,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="mt-3">
                             <div class="clearfix">
                               <h4 class="float-start">قميص تك فت بيز</h4>
@@ -715,12 +870,20 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
                           </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn mt-3 w-100 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/lacoste_2.jpg"
                             alt="lacoste"
@@ -729,12 +892,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">حقيبة شانتاكو نسائية</h4>
                             <div class="float-end text-info">50$</div>
@@ -749,6 +912,14 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -781,7 +952,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 mt-4">
+            <div class="col-md-6 mt-4">
               <div class="panel">
                 <div
                   id="carousel-brand-addidas2"
@@ -791,7 +962,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/puma_1.jpg"
                             alt="lacoste"
@@ -800,12 +971,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">حذاء النتس سماش بك</h4>
                             <div class="float-end text-info">35$</div>
@@ -821,12 +992,20 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
                           </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/puma_1.jpg"
                             alt="lacoste"
@@ -835,12 +1014,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">حذاء سويدي رياضي</h4>
                             <div class="float-end text-info">35$</div>
@@ -855,6 +1034,14 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -887,7 +1074,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 mt-4">
+            <div class="col-md-6 mt-4">
               <div class="panel">
                 <div
                   id="carousel-brand-addidas3"
@@ -897,7 +1084,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/polo_1.jpg"
                             alt="lacoste"
@@ -906,12 +1093,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">قميص سليم-فت</h4>
                             <div class="float-end text-info">35$</div>
@@ -927,12 +1114,20 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
                           </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/polo_2.jpg"
                             alt="lacoste"
@@ -941,12 +1136,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">قميص سليم-فت</h4>
                             <div class="float-end text-info">35$</div>
@@ -961,6 +1156,14 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -993,7 +1196,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 mt-4">
+            <div class="col-md-6 mt-4">
               <div class="panel">
                 <div
                   id="carousel-brand-addidas4"
@@ -1003,7 +1206,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/hm_2.jpg"
                             alt="lacoste"
@@ -1012,12 +1215,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">ثوب بناتي مرقش</h4>
                             <div class="float-end text-info">35$</div>
@@ -1033,12 +1236,20 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
                           </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 text-center">
                           <img
                             src="images/hm_3.jpg"
                             alt="lacoste"
@@ -1047,12 +1258,12 @@
                           />
                           <a
                             href="product.html"
-                            class="btn btn-outline-warning custom-btn-warning d-block"
+                            class="btn btn-outline-warning custom-btn-warning d-none d-lg-block"
                           >
                             تصفح المتنج
                           </a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                           <div class="clearfix">
                             <h4 class="float-start">طقم للأطفال</h4>
                             <div class="float-end text-info">35$</div>
@@ -1067,6 +1278,14 @@
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-solid fa-star text-warning"></i>
                             <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="d-lg-none">
+                            <a
+                              href="product.html"
+                              class="btn w-100 mt-3 btn-outline-warning custom-btn-warning"
+                            >
+                              تصفح المتنج
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1103,6 +1322,74 @@
         </div>
       </div>
       <!-- End Worldwide Trademark -->
+      <!-- Start Footer -->
+      <footer class="row">
+        <div id="brand-logos" class="text-center">
+          <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+          <div class="img-container">
+            <img src="images/adidas.png" alt="adidas" />
+            <img src="images/lacoste.png" alt="lacoste" />
+            <img src="images/puma.png" alt="puma" />
+            <img src="images/polo.png" alt="polo" />
+          </div>
+        </div>
+        <div id="footer-nav" class="text-center">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="images/logo_footer.png" alt="" />
+            </a>
+          </div>
+          <div class="footer-nav-links d-none d-md-block">
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="search.html">البحث المتقدم</a>
+            <a href="contact.html">تواصل معنا</a>
+          </div>
+
+          <div
+            class="newsletter col-md-6 offset-md-3 d-flex justify-content-center align-items-center"
+          >
+            <form>
+              <label for="footer-input"
+                >تابع النشرة البريدية لأاحدث العروض</label
+              >
+              <br />
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="footer-input"
+                  class="form-control custom-form-control"
+                  placeholder="البريد الأكتروني"
+                />
+                <button type="submit" class="btn btn-outline-warning">
+                  متابعة
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="footer-copyright-social">
+          <div class="container">
+            <div class="clearfix">
+              <div id="copyright" class="float-start">
+                جميع الحقوق محفوظة سنة 2023
+              </div>
+              <div id="social-icons" class="float-end">
+                <a href="https://www.facebook.com">
+                  <i class="fab fa-facebook-square fa-lg"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-twitter-square fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                  <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
     </div>
   </body>
 </html>
