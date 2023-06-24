@@ -370,6 +370,8 @@ ul.nav-item .nav-link {
   margin-right: 25px;
   max-width: 100px;
   max-height: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 #footer-nav {
@@ -448,6 +450,126 @@ ul.nav-item .nav-link {
 .btn:active {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/*
+--------------Product Page 
+*/
+
+.custom-breadcrumb {
+  padding: 25px 0;
+}
+
+.custom-breadcrumb a {
+  color: var(--gray-col);
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.custom-breadcrumb a:hover {
+  color: var(--rosy-col);
+}
+
+.custom-breadcrumb li::before {
+  color: var(--rosy-col) !important;
+  font-weight: bold;
+}
+
+.custom-breadcrumb .active {
+  color: var(--light-g);
+}
+
+#carousel-product-images .carousel-indicators {
+  position: absolute;
+  top: 92%;
+  right: 0;
+}
+
+#carousel-product-images .carousel-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--light-g);
+}
+
+#form-product-selection h2 {
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+.price.large {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.borders-between > div + div {
+  border-top: 1px solid var(--light-g);
+  padding: 15px 0;
+}
+
+.product-option {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--light-g);
+  text-align: center;
+  justify-content: center;
+  color: var(--light-g);
+  margin: 3px;
+  font-weight: 700;
+}
+
+.product-option input {
+  display: none;
+}
+
+.product-option.active {
+  color: var(--rosy-col);
+  border-color: var(--rosy-col);
+}
+
+.color-option.active {
+  border-color: white;
+  outline: #000 solid 1px;
+}
+
+.product-quantity select {
+  height: 34px !important;
+  padding: 6px 12px;
+  margin-right: 5px;
+}
+
+.custom-btn-with-icon {
+  margin: 15px 0;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.heading-with-border-bottom {
+  border-bottom: 1px solid var(--light-g);
+  padding-bottom: 15px;
+}
+
+.heading-inline {
+  display: inline-block;
+  min-width: 250px;
+}
+
+.more-description p,
+.more-description ul {
+  margin-bottom: 10px;
+}
+
+.comments .comment img {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border: 1px solid var(--light-w);
+}
+
+.comments .comment h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1200) {
@@ -542,6 +664,18 @@ ul.nav-item .nav-link {
   #social-icons a {
     font-size: 150%;
   }
+
+  .product-img {
+    margin-bottom: 70px;
+  }
+
+  .product-option {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) and (max-width: 992px) {
@@ -612,5 +746,10 @@ ul.nav-item .nav-link {
 
   #brand-logos .img-container img {
     margin: 5px 15px !important;
+  }
+
+  #from-product-selection,
+  .comments {
+    padding-left: 15px;
   }
 }
